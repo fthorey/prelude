@@ -1,4 +1,4 @@
-;;; personal-keybindings.el --- Emacs personal: some useful key bindings
+;;; personal-keybindings.el --- Emacs Personal: some useful key bindings
 
 ;;; Commentary:
 
@@ -14,6 +14,10 @@
 (global-set-key (kbd "M-n") 'forward-paragraph)       ; forward paragraph
 
 ;; Buffer
+(global-set-key [M-left] 'windmove-left)                ; move to left windnow
+(global-set-key [M-right] 'windmove-right)              ; move to right window
+(global-set-key [M-up] 'windmove-up)                    ; move to up windnow
+(global-set-key [M-down] 'windmove-down)                ; move to down window
 (global-set-key (kbd "C-x n") 'revert-buffer)           ; revert buffer
 
 ;; Programming
