@@ -1,17 +1,9 @@
 ;;; personnal-keybindings.el --- Emacs Personnal: some useful keybindings.
 
-;;; Remap of some commands from QWERTY keymap to AZERTY keymap
-
-;; Undo-tree-node
-(global-set-key (kbd "C-\)") 'undo-tree-undo)          ; undo-tree-undo (remapped)
-(global-set-key (kbd "C-!") 'undo-tree-undo)           ; undo-tree-undo (remapped)
-(global-set-key (kbd "M-\)") 'undo-tree-redo)          ; undo-tree-redo (remapped)
-(global-set-key (kbd "C-§") 'undo-tree-redo)           ; undo-tree-redo (remapped)
-
 ;; Misc
-(global-set-key (kbd "C-x \*") 'align-regexp)          ; align code in a pretty way (remapped)
-(global-set-key (kbd "C-è") 'prelude-top-join-line)    ; join two lines into one (remapped)
- 
+(global-set-key (kbd "C-x \*") 'align-regexp)          ; align code in a pretty way (remapped from prelude)
+(global-set-key (kbd "C-è") 'prelude-top-join-line)    ; join two lines into one (remapped from prelude)
+
 ;;; Code
 
 (global-set-key (kbd "M-g") 'goto-line)               ; goto line #
@@ -66,6 +58,3 @@
   isearch-mode-map
   [(control c)]
   'isearch-yank-char)                                   ; yank char from buffer
-
-
-
