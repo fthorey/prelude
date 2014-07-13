@@ -1,13 +1,16 @@
-;;; personnal-keybindings.el --- Emacs Personnal: some useful keybindings.
+;;; personal-keybindings.el --- Emacs personal: some useful key bindings
 
-;; Misc
+;;; Commentary:
+
+;;; Code:
+
+;; General
 (global-set-key (kbd "C-x \*") 'align-regexp)          ; align code in a pretty way
-(global-set-key (kbd "C-è") 'prelude-top-join-line)    ; join two lines into one
+(global-set-key (kbd "C-:") 'hippie-expand)            ; run hippie-expand
 
-;;; Code
-
-(global-set-key (kbd "M-g") 'goto-line)               ; goto line #
-(global-set-key (kbd "M-p") 'backward-paragraph)      ; forward paragraph
+;; Navigation
+(global-set-key (kbd "M-g") 'goto-line)               ; goto line
+(global-set-key (kbd "M-p") 'backward-paragraph)      ; backward paragraph
 (global-set-key (kbd "M-n") 'forward-paragraph)       ; forward paragraph
 
 ;; Buffer
