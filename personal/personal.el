@@ -1,9 +1,11 @@
 ;;; personnal.el --- Emacs Personnal: Personnal configuration
 
-;; ---------------------------
-;; -- Custom functions --
-;; ---------------------------
-(defun reload ()
+;;; Commentary:
+
+;;; Code:
+
+;; Reload init.el
+(defun reload()
   (interactive)
   (load-file "~/.emacs.d/init.el"))
 
