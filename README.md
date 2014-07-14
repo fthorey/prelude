@@ -322,6 +322,20 @@ Keybinding         | Description
 **Note**: For various arithmetic operations, the prefix `C-c .` only needs to be pressed once for the first operation.
 For subsequent operations, only the appropriate operations (i.e. `+`, `-`, `*`, `/`... needs to be pressed).
 
+#### Personal Prelude Mode
+
+Keybinding         | Description
+-------------------|------------------------------------------------------------
+<kbd>C-x *</kbd>   | Align code in a pretty way
+<kbd>C-:</kbd>   | Run hippie-expand
+<kbd>C-c j</kbd>   | Toggle comment on current line/region
+<kbd>M-g</kbd>   | Goto line
+<kbd>M-p</kbd>   | Backward paragraph
+<kbd>M-n</kbd>   | Forward paragraph
+<kbd>C-x n</kbd>   | Revert buffer
+<kbd>F5</kbd>   | show/hide line numbers
+<kbd>F6</kbd>   | Magit status
+
 #### OSX modifier keys
 
 Prelude does not mess by default with the standard mapping of `Command` (to `Super`) and `Option` (to `Meta`).
