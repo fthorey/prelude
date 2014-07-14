@@ -7,6 +7,7 @@
 ;; General
 (global-set-key (kbd "C-x \*") 'align-regexp)          ; align code in a pretty way
 (global-set-key (kbd "C-:") 'hippie-expand)            ; run hippie-expand
+(global-set-key (kbd "C-c j") 'comment-or-uncomment-region-or-line) ; toggle comment
 
 ;; Navigation
 (global-set-key (kbd "M-g") 'goto-line)               ; goto line
@@ -14,10 +15,6 @@
 (global-set-key (kbd "M-n") 'forward-paragraph)       ; forward paragraph
 
 ;; Buffer
-(global-set-key [M-left] 'windmove-left)                ; move to left windnow
-(global-set-key [M-right] 'windmove-right)              ; move to right window
-(global-set-key [M-up] 'windmove-up)                    ; move to up windnow
-(global-set-key [M-down] 'windmove-down)                ; move to down window
 (global-set-key (kbd "C-x n") 'revert-buffer)           ; revert buffer
 
 ;; Programming
@@ -61,3 +58,5 @@
   isearch-mode-map
   [(control c)]
   'isearch-yank-char)                                   ; yank char from buffer
+
+;;; personal-keybindings.el ends here
