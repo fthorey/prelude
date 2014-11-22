@@ -12,12 +12,10 @@
 (yas/global-mode 1) ; make it global
 
 ;; Do not highlight the current line
-(global-hl-line-mode -1)
+(global-hl-line-mode nil)
 
 ;; Disable on-the-fly syntax checking
-(if (fboundp 'global-flycheck-mode)
-    (global-flycheck-mode -1)
-  (remove-hook 'prog-mode-hook 'flycheck-mode))
+(setq prelude-flyspell nil)
 
 ;; Personalize ido
 (setq ido-case-fold  t
